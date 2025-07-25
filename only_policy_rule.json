@@ -1,11 +1,13 @@
 {
   "if": {
-    "not": {
-      "field": "location",
-      "in": "[parameters('allowedLocations')]"
-    }
+    "field": "location",
+    "in": [
+      "canadacentral",
+      "canadaeast"
+    ]
   },
   "then": {
     "effect": "deny"
   }
 }
+
